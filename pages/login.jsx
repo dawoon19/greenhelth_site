@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Login.module.css'
 
+import router from 'next/router'
+
 import Logo from '../public/whitecalhackslogo.png'
 
-export default function Home() {
+export default function Login() {
   return (
     <> 
       <head>
@@ -25,7 +27,7 @@ export default function Home() {
         <h3>Password</h3>
         <input className={styles.input} placeholder="Password"/>
 
-        <div onClick={()=>router.push('login')} className={styles.loginButton}>
+        <div onClick={()=>router.push('dashboard')} className={styles.loginButton}>
           Sign In
         </div>
         
