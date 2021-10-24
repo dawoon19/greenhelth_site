@@ -1,0 +1,50 @@
+.login {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:max(100vh, 250px);
+    background: linear-gradient(to top, rgb(255,255,255), rgb(225, 255, 235));
+}
+
+.login h1 {
+    color: #0BC07F;
+    font-weight:800;
+}
+
+
+#logo {
+    width: max(5vw,50px);
+    height:max(5vw,50px);
+    background-image:url('../public/greenlogo.png');
+    background-size:cover;
+    animation: logostartup 3s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+.input {
+    padding: 15px;
+    font-size:15px;
+    font-family: 'Poppins';
+    border-radius: 5vw;
+    border:none;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.125);
+}
+
+.loginButton {
+    margin-top: 100px;
+    font-weight: 700;
+    cursor: pointer;
+    padding:25px 125px 25px 125px;
+    font-size:max(1.5vw,18px);
+    color:white;
+    background-color: #0BC07F;
+    border-radius: 100px;
+    transition: 0.5s;
+  }
+  
+  .loginButton:hover {
+    background-color:white;
+    color: #0BC07F;
+    border: 3px #0BC07F solid;
+  }
